@@ -91,12 +91,12 @@ A web application built with Laravel for managing restaurant menus, transactions
 2. **Navigation**
 
   Default Admin dummy:
-  email: dummyadmin@example.com
-  password: 123456
+  - email: dummyadmin@example.com
+  - password: 123456
 
   Default Pegawai/User dummy:
-  email: dummypegawai@example.com
-  password: 123456
+  - email: dummypegawai@example.com
+  - password: 123456
 
     - **Menu/Cashier**: View the menu and manage orders.
     - **Dashboard**: Overview of the application.
