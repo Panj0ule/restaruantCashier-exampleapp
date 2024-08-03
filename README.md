@@ -9,8 +9,6 @@ A web application built with Laravel for managing restaurant menus, transactions
 - [Installation](#installation)
 - [Configuration](#configuration)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
