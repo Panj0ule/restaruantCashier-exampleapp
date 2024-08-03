@@ -35,7 +35,7 @@ A web application built with Laravel for managing restaurant menus, transactions
     ```sh
     composer install
     ```
-    or update
+    or update if needed
 
 5. **Run Migrations**
 
