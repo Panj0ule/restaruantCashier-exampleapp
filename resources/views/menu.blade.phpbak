@@ -1,0 +1,47 @@
+<x-layout>
+ <x-slot:title>{{ $title }}</x-slot:title>
+
+ <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+    @foreach ($items as $item)
+
+
+    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+      <a href="#">
+        <img class="rounded-t-lg" src="https://placehold.co/600x400" alt="" />
+      </a>
+      <div class="p-5">
+        <a href="#">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">{{ $item['name'] }}</h5>
+        </a>
+        <p class="mb-3 font-normal text-gray-700">{{ $item['price'] }}</p>
+        <!-- Input Number -->
+        <form class="max-w-xs mx-auto">
+          <label for="counter-input" class="block mb-1 text-sm font-medium text-gray-900">Choose quantity:</label>
+          <div class="relative flex items-center">
+              <button type="button" id="decrement-button" data-input-counter-decrement="counter-input" class="flex-shrink-0 bg-gray-100 hover:bg-gray-200 inline-flex items-center justify-center border border-gray-300 rounded-md h-5 w-5 focus:ring-gray-100 focus:ring-2 focus:outline-none">
+                  <svg class="w-2.5 h-2.5 text-gray-900" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 2">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h16"/>
+                  </svg>
+              </button>
+              <input type="text" id="counter-input" data-input-counter class="flex-shrink-0 text-gray-900 border-0 bg-transparent text-sm font-normal focus:outline-none focus:ring-0 max-w-[2.5rem] text-center" placeholder="" value="0" required />
+              <button type="button" id="increment-button" data-input-counter-increment="counter-input" class="flex-shrink-0 bg-gray-100 hover:bg-gray-200 inline-flex items-center justify-center border border-gray-300 rounded-md h-5 w-5 focus:ring-gray-100 focus:ring-2 focus:outline-none">
+                  <svg class="w-2.5 h-2.5 text-gray-900" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
+                  </svg>
+              </button>
+          </div>
+        </form>
+        <!-- End Input Number -->
+        <a href="#" class=" mt-5 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
+          Add
+          <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    @endforeach
+  </div>
+
+
+</x-layout>
